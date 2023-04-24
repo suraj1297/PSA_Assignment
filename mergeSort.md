@@ -1,9 +1,9 @@
 ### Name: Suraj Balaso Desai
 
-# Merge Sort Algorithm
+# ***Merge Sort Algorithm***
 
 
-### Introduction
+### ***Introduction***
 
 Merge sort is a popular sorting algorithm that uses the divide-and-conquer strategy to sort a list of items. It is an efficient algorithm that has a time complexity of O(n log n), which makes it a suitable choice for sorting large datasets.Merge Sort is a sorting technique that follows a divide and conquer approach. It involves breaking down a problem into smaller, related sub-problems recursively until they become simple enough to be solved directly. The sub-problems are solved individually, and their solutions are merged to form the solution to the original problem. In the case of Merge Sort, the algorithm first divides the array into two equal halves and then sorts and combines them in a manner that results in a fully sorted array.
 
@@ -14,7 +14,7 @@ Merge sort comes in handy here, as it can efficiently merge these sorted lists i
 The Merge sort algorithm has a significant advantage is that it ensures a worst-case time complexity of O(n log n). This feature makes it an ideal sorting algorithm for large datasets, particularly when compared to others like bubble sort or insertion sort, which have higher time complexities. Moreover, Merge sort is considered a stable sorting algorithm because it preserves the relative position of equal elements in the sorted list.
 
 
-### Algorithm
+### ***Algorithm***
 
 The Merge sort algorithm consists of two primary steps:
 
@@ -22,7 +22,7 @@ Step 1:  the unsorted list is divided into two sub-lists of equal size, recursiv
 
 Step 2: The sub-lists are combined together in a sorted manner to create a new sorted list. This is achieved by comparing the smallest element from each sub-list and transferring them to the new sorted list. This procedure is repeated until all the elements are merged together, resulting in a single sorted list.
 
-### Example
+### ***Example***
 
 Let's assume that we have an array that includes the following elements: 1, 6, 3, 2, 7, 5, 8, 4. Our task is to sort this array using the merge sort algorithm.
 
@@ -57,7 +57,7 @@ Lastly, we will compare the elements of the two sub-arrays, each having a size o
 ![image](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/07/TechVidvan-Merge-sort-normal-image07.jpg)
 
 
-### Code
+### ***Code***
 
 ```
 def merge(sub1, sub2):
@@ -98,16 +98,16 @@ if __name__ == "__main__":
 
 ```
 
-### Output
+### ***Output***
 [1, 5, 6, 9, 10, 12]
 
-### Time Complexity
+### ***Time Complexity***
 
 Merge sort has a time complexity of O(n log n), which implies that as the number of elements (n) increases, the time taken to sort the array will increase at a rate proportional to n multiplied by the logarithm of n. Merge sort is highly efficient and is often preferred over other sorting algorithms, such as Bubble sort or Insertion sort, which have higher time complexities.
 
 However, it is worth noting that Merge sort utilizes additional memory space for the temporary arrays used during the merging process, which can have an impact on its space complexity.
 
-### Advantages
+### ***Advantages***
 
 1. Efficiency: To sort large datasets efficiently, Merge sort utilizes the divide-and-conquer approach to divide the dataset into smaller sub-lists that can be sorted separately, resulting in a worst-case time complexity of O(n log n). This makes it an efficient algorithm for sorting large datasets.
 
@@ -119,20 +119,18 @@ However, it is worth noting that Merge sort utilizes additional memory space for
 
 5. Parallelization: Merge sort can be easily divided into multiple independent sub-tasks that can be executed concurrently on different processors or threads, making it a highly parallelizable algorithm. This property allows Merge sort to take advantage of multi-core or distributed systems and can lead to significant improvements in performance.
 
-### Disadvantages
+### ***Disadvantages***
 
 1. Space complexity: The merge sort algorithm needs extra memory space to use temporary arrays during the merging process. This could become problematic when working with large datasets because it can result in a significant increase in memory consumption.
 
 2. Not in-place: Merge sort cannot sort the data in place, which means that it needs additional memory space to store the temporary arrays used during the merging step. This can be a disadvantage when working with limited memory or when the memory is a bottleneck in the system, as it can cause the algorithm to consume a lot of memory.
 
-### Conclusion
+### ***Conclusion***
 
 To sum up, Merge sort is a widely used and effective sorting algorithm that employs the divide-and-conquer approach to sort a collection of items. It achieves a worst-case time complexity of O(n log n) by splitting the input list into smaller sub-lists, sorting them recursively, and merging them back together. Additionally, Merge sort preserves the relative order of equal elements in the sorted list.
 
 
-
-
-## References
+### ***References***
 
 - [TechVidvan](https://techvidvan.com/tutorials/merge-sort/)
 - [Medium](https://medium.com/karuna-sehgal/a-simplified-explanation-of-merge-sort-77089fe03bb2)
